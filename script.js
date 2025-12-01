@@ -1,16 +1,17 @@
 //complete this code
 class Animal {
+	private species string;
 	Constructor(species:string)
 	{
 		this.species=species;
 	}
-	get getSpecies():string
+	get species():string
 	{
 		return this.species;
 	}
 	makeSound():void
 	{
-		Console.log(`The ${this.species} makes a sound`);
+		console.log(`The ${this.species} makes a sound`);
 	}
 }
 
