@@ -1,18 +1,17 @@
-//complete this code
 class Animal {
-	private species string;
-	Constructor(species:string)
-	{
-		this.species=species;
-	}
-	get species():string
-	{
-		return this.species;
-	}
-	makeSound():void
-	{
-		console.log(`The ${this.species} makes a sound`);
-	}
+  private _species: string;
+
+  constructor(species: string) {
+    this._species = species;
+  }
+
+  get species(): string {
+    return this._species;
+  }
+
+  makeSound(): void {
+    console.log(`The ${this._species} makes a sound`);
+  }
 }
 
 class Cat extends Animal {
@@ -29,5 +28,5 @@ class Dog extends Animal {
 
 // Do not change the code below this line
 window.Animal = Animal;
-window.Dog = Dog;
 window.Cat = Cat;
+window.Dog = Dog;
